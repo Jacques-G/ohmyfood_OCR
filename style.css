@@ -1,4 +1,4 @@
-/* GENERAL */
+/* -----GENERAL------ */
 
 body
 {
@@ -10,7 +10,7 @@ body
     position: relative;
 }
 
-/* HEADER */
+/* -----HEADER----- */
 
 header
 {
@@ -26,7 +26,7 @@ h1
     font-size: 3em;
 }
 
-/* SECTION */
+/* ------SECTION------ */
 
 section h3
 {
@@ -36,6 +36,19 @@ section h3
 section div a
 {
     text-decoration: none;
+    color: black;
+}
+
+.la_note, .le_chic, .le_delice, .la_palette
+{
+    transform: scale(1);
+    transition: transform 400ms;
+}
+
+.la_note:hover, .le_chic:hover, .le_delice:hover, .la_palette:hover
+{
+    transform: scale(1.2);
+    z-index: 1;
 }
 
 .menus12, .menus34
@@ -61,11 +74,18 @@ section div a
     justify-content: center;
 }
 
+/* la_note*/
+
 .la_note
 {
     align-items: center;
     background-color: rgb(252,223,219);
     margin-right: 10px;
+}
+
+.la_note h3
+{
+    font-family: 'Dancing Script', sans-serif;
 }
 
 .la_note figure
@@ -74,6 +94,14 @@ section div a
     margin-bottom: -20px;
 }
 
+.la_note p
+{
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* le_chic*/
 
 .le_chic
 {
@@ -81,11 +109,15 @@ section div a
     margin-left: 10px;
 }
 
+/*le_delice*/
+
 .le_delice
 {
     background-color: rgb(249, 249, 249);
     margin-right: 10px;
 }
+
+/*la_palette*/
 
 .la_palette
 {
@@ -93,7 +125,7 @@ section div a
     margin-left: 10px;
 }
 
-/* COMING */
+/* -----COMING----- */
 
 .coming
 {
@@ -107,7 +139,7 @@ section div a
     border-radius: 5px;
 
 }
-/* FOOTER */
+/* ------FOOTER------ */
 
 footer
 {
@@ -123,27 +155,10 @@ footer a
 {
     color: rgb(253, 203, 70);
     font-family: 'Roboto', sans-serif;
-    font-size: 2em;
     text-decoration: none;
 }
-/*.mention
+
+footer a:hover
 {
-    position: fixed;
-    bottom: 0;
-    padding: 10px 0 10px 50px;
-    background-color: rgb(87,156,135);
-    color: rgb(253, 203, 70);
-    font-size: 2em;
-    font-family: 'Roboto', sans-serif;
+    
 }
-.contact
-{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    padding: 10px 50px 10px 0;
-    background-color: rgb(87,156,135);
-    color: rgb(253, 203, 70);
-    font-size: 2em;
-    font-family: 'Roboto', sans-serif;
-}*/
