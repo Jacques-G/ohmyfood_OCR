@@ -33,6 +33,11 @@ section h3
     margin-bottom: 0;
 }
 
+section p
+{
+    font-size: 25px;
+}
+
 section div a
 {
     text-decoration: none;
@@ -64,6 +69,11 @@ section div a
 {
     margin-bottom: 20px;
 }
+
+.menus34 p
+{
+    font-family: 'Shadow Into Light', cursive;
+}
 .menus12 div, .menus34 div
 {
     width: 200px;
@@ -83,12 +93,12 @@ section div a
     margin-right: 10px;
 }
 
-.la_note h3
+.la_note h3, .menu_lanote 
 {
     font-family: 'Dancing Script', sans-serif;
 }
 
-.la_note figure
+.la_note figure, .menu_lanote figure
 {
     font-size: 2em;
     margin-bottom: -20px;
@@ -109,6 +119,12 @@ section div a
     margin-left: 10px;
 }
 
+.le_chic h3
+{
+    font-family: 'Bellota',cursive;
+}
+
+
 /*le_delice*/
 
 .le_delice
@@ -117,12 +133,22 @@ section div a
     margin-right: 10px;
 }
 
+.le_delice h3
+{
+    font-family: 'Satisfy', cursive;
+}
+
 /*la_palette*/
 
 .la_palette
 {
     background-color: rgb(253,255,253);
     margin-left: 10px;
+}
+
+.la_palette h3
+{
+    font-family: 'Indie Flower', cursive;
 }
 
 /* -----COMING----- */
@@ -155,10 +181,105 @@ footer a
 {
     color: rgb(253, 203, 70);
     font-family: 'Roboto', sans-serif;
+    font-size: 2em;
     text-decoration: none;
 }
 
 footer a:hover
 {
     
+}
+
+/*------PAGE LA NOTE ENCHANTEE------*/
+
+h2
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+.menu_lanote
+{
+    width: 700px;
+    margin: 0 auto;
+    background-color: rgb(252,223,219);
+    box-shadow: 0 0 10px rgb(217,218,219);
+    padding: 20px 0;
+    margin-bottom: 120px;
+    
+}
+
+.menu_lanote figure, .menu_lanote h3, .menu_lanote h4
+{
+    text-align: center;
+}
+.menu_lanote ul li
+{
+    padding-bottom: 5px;
+}
+
+.prelude, .point_dorgue
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.descript_lanote
+{
+    size: 70%;
+    list-style: none;
+    text-align: left;
+}
+
+.prix_lanote
+{
+    size: 30%;
+    list-style: none;
+    text-align: right;
+    font-weight: bold;
+}
+
+.mouvement
+{
+    size: 100%;
+    padding-left: 55px;
+}
+.titre_final
+{
+    display: flex;
+    justify-content: center;
+}
+
+.titre_final h3
+{
+    padding-top: 25px;
+}
+
+
+/*----------MEDIA QUERIES----------*/
+
+@media all and (max-width: 760px)
+{
+    .menus12, .menus34
+    {
+        flex-direction: column;
+        justify-content: center;
+        margin:0;
+    }
+    .la_note, .le_chic, .le_delice, .la_palette
+    {
+        margin: 5px auto;
+    }
+
+    .coming
+    {
+        margin: 5px auto 50px auto;
+    }
+    
+    footer div a
+    {
+        font-size: 1em;
+    }
+
+
 }
