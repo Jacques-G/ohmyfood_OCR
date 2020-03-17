@@ -10,6 +10,14 @@ body
     position: relative;
 }
 
+.main
+{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 /* -----HEADER----- */
 
 header
@@ -156,7 +164,7 @@ section div a
 .coming
 {
     width: 300px;
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
     background-color: rgb(87,156,135);
     color: rgb(253, 203, 70);
@@ -206,44 +214,44 @@ h2
     box-shadow: 0 0 10px rgb(217,218,219);
     padding: 20px 0;
     margin-bottom: 120px;
-    
+    color: rgb(61, 19, 25);
 }
 
-.menu_lanote figure, .menu_lanote h3, .menu_lanote h4
+.menu_lanote figure, .menu_lanote h3, h4
 {
     text-align: center;
 }
-.menu_lanote ul li
-{
-    padding-bottom: 5px;
-}
-
-.prelude, .point_dorgue
-{
-    display: flex;
-    justify-content: space-around;
-}
-
 .descript_lanote
 {
-    size: 70%;
-    list-style: none;
-    text-align: left;
+    padding: 0;
 }
 
-.prix_lanote
+.descript_lanote li, .partie_menu
 {
-    size: 30%;
-    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.descript_plat
+{
+    width: 80%;
+    margin:auto 0;
+}
+
+.prix_plat
+{
+    width: 20%;
     text-align: right;
     font-weight: bold;
 }
 
-.mouvement
+.mouvement ul li
 {
-    size: 100%;
-    padding-left: 55px;
+    padding-bottom: 20px;
 }
+
 .titre_final
 {
     display: flex;
@@ -255,26 +263,34 @@ h2
     padding-top: 25px;
 }
 
+.trait_gauche, .trait_droit
+{
+    width: 35%;
+    height: 30px;
+    border-bottom: 3px double rgb(61, 19, 25);
+}
+
+
 
 /*----------MEDIA QUERIES----------*/
 @media all and (max-width: 1024px)
 {
-    .menus12, .menus34
+    /*.menus12, .menus34
     {
         margin: 150px auto;
-    }
+    }*/
 }
 
 @media all and (max-width: 800px)
 {
-    .menus12, .menus34
+    /*.main
     {
-        margin: 50px auto;
-    }
+        margin: auto auto;
+    }*/
 }
 @media all and (max-width: 640px)
 {
-    .menus12, .menus34
+    /*.menus12, .menus34
     {
         flex-direction: column;
         justify-content: center;
@@ -316,6 +332,6 @@ h2
     .mouvement
     {
         padding-left: 0;
-    }
+    }*/
 
 }
