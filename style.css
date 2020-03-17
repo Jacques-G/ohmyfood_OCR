@@ -257,8 +257,22 @@ h2
 
 
 /*----------MEDIA QUERIES----------*/
+@media all and (max-width: 1024px)
+{
+    .menus12, .menus34
+    {
+        margin: 150px auto;
+    }
+}
 
-@media all and (max-width: 760px)
+@media all and (max-width: 800px)
+{
+    .menus12, .menus34
+    {
+        margin: 50px auto;
+    }
+}
+@media all and (max-width: 640px)
 {
     .menus12, .menus34
     {
@@ -281,5 +295,27 @@ h2
         font-size: 1em;
     }
 
+    .menu_lanote
+    {
+        width: auto;
+        margin-bottom: 60px;
+    }
+
+    .prelude, .point_dorgue
+    {
+        margin: 0 auto;
+        justify-content: space-around;
+        padding-right: 20px;
+    }
+
+    .prix_lanote
+    {
+        flex-direction: row;
+    }
+
+    .mouvement
+    {
+        padding-left: 0;
+    }
 
 }
