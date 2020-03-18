@@ -128,7 +128,7 @@ section div a
     margin-left: 10px;
 }
 
-.le_chic h3
+.le_chic h3, .menu_lechic
 {
     font-family: 'Bellota',cursive;
 }
@@ -142,7 +142,7 @@ section div a
     margin-right: 10px;
 }
 
-.le_delice h3
+.le_delice h3, .menu_ledelice
 {
     font-family: 'Satisfy', cursive;
 }
@@ -155,7 +155,7 @@ section div a
     margin-left: 10px;
 }
 
-.la_palette h3
+.la_palette h3, .menu_lapalette
 {
     font-family: 'Indie Flower', cursive;
 }
@@ -199,7 +199,10 @@ footer a:hover
 {
     
 }
-
+.menu_lanote figure, .menu_lanote h3, .menu_lechic h3, .menu_ledelice h3, .menu_lapalette h3
+{
+    font-size: 1.5em;
+}
 /*------PAGE LA NOTE ENCHANTEE------*/
 
 h2
@@ -218,7 +221,7 @@ h2
     margin-bottom: 120px;
 }
 
-.menu_lanote figure, .menu_lanote h3, h4
+.menu_lanote figure, .menu_lanote h3, h4, .menu_lechic h3, .menu_ledelice h3, .menu_lapalette h3
 {
     text-align: center;
 }
@@ -264,14 +267,92 @@ h2
     padding-top: 25px;
 }
 
-.trait_gauche, .trait_droit
+.menu_lanote .trait_gauche, .menu_lanote .trait_droit
 {
     width: 35%;
     height: 30px;
     border-bottom: 3px double rgb(61, 19, 25);
 }
 
+/* -------PAGE LE CHIC A LA FRANCAISE-------*/
 
+.menu_lechic
+{
+    width: 700px;
+    margin: 0 auto;
+    background-color: rgb(255,245,254);
+    box-shadow: 0 0 10px rgb(217,218,219);
+    padding: 20px 0;
+    margin-bottom: 120px;
+}
+
+.menu_lechic .partie_menu1, .menu_lechic .prelude
+{
+    color: rgb(198,116,18);
+}
+
+.trait_gauche_chic, .trait_droit_chic
+{
+    width: 30%;
+    height: 30px;
+    border-bottom: 4px double;
+}
+
+.menu_lechic .partie_menu2, .menu_lechic .point_dorgue
+{
+    color: rgb(165,103,153);
+}
+
+.menu_lechic .partie_menu3, .menu_lechic .mouvement
+{
+    color: rgb(110,76,204);
+}
+
+/*----------PAGE LE DELICE DES PAPILLES------------*/
+
+.menu_ledelice
+{
+    width: 700px;
+    margin: 0 auto;
+    background-color: rgb(249, 249, 249);
+    box-shadow: 0 0 10px rgb(217,218,219);
+    padding: 20px 0;
+    margin-bottom: 120px;
+}
+
+.menu_ledelice .partie_menu1 .trait_gauche, .menu_ledelice .partie_menu1 .trait_droit
+{
+    color: rgb(2,40,221);
+}
+
+.menu_ledelice .partie_menu2 .trait_gauche, .menu_ledelice .partie_menu2 .trait_droit
+{
+    color: rgb(6,112,243);
+}
+
+.menu_ledelice .partie_menu3 .trait_gauche, .menu_ledelice .partie_menu3 .trait_droit
+{
+    color: rgb(34,157,249);
+}
+
+/*------------PAGE LA PALETTE DU GOUT-----------*/
+
+.menu_lapalette
+{
+    width: 700px;
+    margin: 0 auto;
+    background-color: rgb(253,255,253);
+    box-shadow: 0 0 10px rgb(217,218,219);
+    padding: 20px 0;
+    margin-bottom: 120px;    
+}
+
+.menu_lapalette .trait_gauche, .menu_lapalette .trait_droit
+{
+    width: 35%;
+    height: 30px;
+    border-bottom: 3px double;
+}
 
 /*----------MEDIA QUERIES----------*/
 @media all and (max-width: 1024px)
