@@ -41,7 +41,7 @@ section h3
     margin-bottom: 0;
 }
 
-section p
+.main p
 {
     font-size: 25px;
 }
@@ -352,6 +352,22 @@ h2
     width: 35%;
     height: 30px;
     border-bottom: 3px double;
+}
+
+/*----------PAGE MENTIONS----------*/
+
+.Mentionlegale
+{
+    width: 700px;
+    height: 100vh auto;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+.Mentionlegale a
+{
+    color: black;
 }
 
 /*----------MEDIA QUERIES----------*/
