@@ -12,6 +12,7 @@ body
 
 .main
 {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -66,7 +67,7 @@ section div a
 .menus12, .menus34
 {
     display: flex;
-    margin: 0 auto;
+    margin: auto;
     margin-top: 20px;
     text-align: center;
     justify-content: center;
@@ -103,13 +104,14 @@ section div a
 .la_note h3, .menu_lanote 
 {
     font-family: 'Dancing Script', sans-serif;
+    color: rgb(61, 19, 25);
 }
 
 .la_note figure, .menu_lanote figure
 {
     font-size: 2em;
     margin-bottom: -20px;
-}
+} 
 
 .la_note p
 {
@@ -170,6 +172,7 @@ section div a
     font-family: 'Roboto', sans-serif;
     font-size: 2em;
     border-radius: 5px;
+    margin-bottom: 100px;
 
 }
 /* ------FOOTER------ */
@@ -213,7 +216,6 @@ h2
     box-shadow: 0 0 10px rgb(217,218,219);
     padding: 20px 0;
     margin-bottom: 120px;
-    color: rgb(61, 19, 25);
 }
 
 .menu_lanote figure, .menu_lanote h3, h4
