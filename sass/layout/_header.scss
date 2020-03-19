@@ -1,0 +1,17 @@
+@import "../utils/variables";
+
+/*-----HEADER-----*/
+h1
+{
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    font-family: $font_titre;
+    font-size: 3em;
+    color: $jaune_titre;
+}
+
+header
+{
+    background-color: $vert_fond;
+}

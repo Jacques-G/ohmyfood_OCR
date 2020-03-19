@@ -1,0 +1,84 @@
+@import "../utils/variables";
+
+.la_note, .le_chic, .le_delice, .la_palette
+{
+    width: 200px;
+    height: 300px;
+    box-shadow: 0 0 10px rgb(217,218,219);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: scale(1);
+    transition: transform 400ms;
+
+    &:hover
+    {
+        transform: scale(1.2);
+        z-index: 1;
+    }
+}
+
+.la_note
+{
+    align-items: center;
+    margin-right: 10px;
+    background-color: $chaire;
+    & h3
+    {
+        font-family: $font_note;
+        color: $bordeau;
+    }
+    & figure
+    {
+        font-size: 2em;
+        margin-bottom: -20px;
+    }
+    & p
+    {
+        text-transform: uppercase;
+        font-family: $font_ubuntu;
+    }
+}
+
+.le_chic
+{
+    background-color: $rose_pale;
+    margin-left: 10px;
+    & h3
+    {
+        font-family: $font_bellota;
+    }
+}
+
+.le_delice
+{
+    background-color: $gris_clair;
+    margin-right: 10px;
+    & h3
+    {
+        font-family: $font_satisfy;
+    }
+}
+
+.la_palette
+{
+    background-color: $blanc_terne;
+    margin-left: 10px;
+    & h3
+    {
+        font-family: $font_indie;
+    }
+}
+
+.coming
+{
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: $vert_fond;
+    color: $jaune_titre;
+    font-family: $font_titre;
+    font-size: 2em;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}

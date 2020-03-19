@@ -1,0 +1,237 @@
+@import "../utils/variables";
+
+/*-----ACCUEIL-----*/
+.main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    & p
+    {
+        font-size: 25px;
+    }
+}
+
+section
+{
+    & h3
+    {
+        margin-bottom: 0;
+    }
+    & a
+    {
+        color: $noir;
+    }
+
+}
+
+.menus12, .menus34
+{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.menus34
+{
+    margin-bottom: 20px;
+    & p
+    {
+        font-family: 'Shadow Into Light', cursive;
+    }
+
+}
+
+/*-----PAGE LA NOTE ENCHANTEE-----*/
+
+h2
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+.menu_lanote
+{
+    width: 700px;
+    margin: 0 auto;
+    background-color: $chaire;
+    box-shadow: 0 0 10px rgb(217,218,219);
+    padding: 20px 0;
+    margin-bottom: 120px;
+    font-family: $font_note;
+    color: $bordeau;
+    & figure, h3
+    {
+        font-size: 2em;
+        margin-bottom: -20px;
+        text-align: center;
+    }
+    & h3
+    {
+        margin-bottom: 0;
+    }
+    & h4
+    {
+        text-align: center;
+    }
+}
+
+.partie_menu
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 600px;
+}
+.menu_lanote .trait_gauche, .menu_lanote .trait_droit
+{
+    width: 35%;
+    height: 30px;
+    border-bottom: 3px double $bordeau;
+}
+.descript_lanote
+{
+    padding: 0;
+    & li
+    {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 600px;
+        & p:nth-child(1)
+        {
+            width: 80%;
+            margin: auto 0;
+        }
+        & p:last-child
+        {
+            width: 20%;
+            text-align: right;
+            font-weight: bold;
+        }
+
+    }
+}
+
+.mouvement ul li
+{
+    padding-bottom: 20px;
+}
+
+.titre_final
+{
+    display: flex;
+    justify-content: center;
+}
+
+/*-----PAGE LE CHIC A LA FRANCAISE-----*/
+
+.menu_lechic
+{
+    width: 700px;
+    margin: 0 auto;
+    background-color: $rose_pale;
+    box-shadow: 0 0 10px rgb(217,218,219);
+    padding: 20px 0;
+    margin-bottom: 120px;
+    font-family: $font_bellota;
+    & h3
+    {
+        text-align: center;
+        font-size: 2em;
+    }
+}
+.menu_lechic .partie_menu1, .menu_lechic .prelude
+{
+    color: $orange;
+}
+.trait_gauche_chic, .trait_droit_chic
+{
+    width: 30%;
+    height: 30px;
+    border-bottom: 4px double;
+}
+.menu_lechic .partie_menu2, .menu_lechic .point_dorgue
+{
+    color: $violet;
+}
+
+.menu_lechic .partie_menu3, .menu_lechic .mouvement
+{
+    color: $violet_fonce;
+}
+
+/*-----PAGE LE DELCIE DES PAPILLES-----*/
+
+.menu_ledelice
+{
+    width: 700px;
+    margin: 0 auto;
+    background-color: $gris_clair;
+    box-shadow: 0 0 10px rgb(217,218,219);
+    padding: 20px 0;
+    margin-bottom: 120px;
+    font-family: $font_satisfy;
+    & h3
+    {
+        text-align: center;
+        font-size: 2em;
+    }
+}
+
+.menu_ledelice .partie_menu1 .trait_gauche, .menu_ledelice .partie_menu1 .trait_droit
+{
+    color: $bleu_fonce;
+}
+
+.menu_ledelice .partie_menu2 .trait_gauche, .menu_ledelice .partie_menu2 .trait_droit
+{
+    color: $bleu;
+}
+
+.menu_ledelice .partie_menu3 .trait_gauche, .menu_ledelice .partie_menu3 .trait_droit
+{
+    color: $bleu_clair;
+}
+
+/*-----PAGE LA PALETTE DU GOUT-----*/
+
+.menu_lapalette
+{
+    width: 700px;
+    margin: 0 auto;
+    background-color: $blanc_terne;
+    box-shadow: 0 0 10px rgb(217,218,219);
+    padding: 20px 0;
+    margin-bottom: 120px;
+    font-family: $font_indie;
+    & h3
+    {
+        text-align: center;
+        font-size: 2em;
+    }
+}
+
+.menu_lapalette .trait_gauche, .menu_lapalette .trait_droit
+{
+    width: 35%;
+    height: 30px;
+    border-bottom: 3px double;
+}
+
+/*-----PAGE MENTIUONS LEGALES-----*/
+
+.Mentionlegale
+{
+    width: 700px;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+.Mentionlegale a
+{
+    color: $noir;
+}

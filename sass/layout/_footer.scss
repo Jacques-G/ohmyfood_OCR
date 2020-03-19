@@ -1,0 +1,20 @@
+@import "../utils/variables";
+
+/*-----FOOTER-----*/
+footer
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: $vert_fond;
+    position: fixed;
+    bottom: 0;
+    padding: 10px 0;
+}
+
+footer a
+{
+    color: $jaune_titre;
+    font-family: $font-titre;
+    font-size: 2em;
+}
