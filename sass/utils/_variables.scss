@@ -19,3 +19,9 @@ $font_ubuntu: 'Ubuntu', sans-serif;
 $font_bellota: 'Bellota',cursive;
 $font_satisfy: 'Satisfy', cursive;
 $font_indie: 'Indie Flower', cursive;
+
+$breakpoints: (
+    grande-tablette: 1024px,
+    petite-tablette: 800px,
+    mobile: 640px,
+)

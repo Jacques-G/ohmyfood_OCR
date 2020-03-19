@@ -1,4 +1,5 @@
 @import "../utils/variables";
+@import "../utils/mixins";
 
 /*-----ACCUEIL-----*/
 .main
@@ -9,6 +10,56 @@
     & p
     {
         font-size: 25px;
+    }
+    @include grande-tablette
+    {
+        margin: auto;
+        height: 90%;
+    }
+    @include mobile
+    {
+        width: auto;
+        height: auto;
+    }
+}
+
+.main2
+{
+    @include grande-tablette
+    {
+        height: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    @include petite-tablette
+    {
+        height: auto;
+    }
+    @include mobile
+    {
+        width: auto;
+        margin: auto;
+    }
+}
+
+.main3
+{
+    @include grande-tablette
+    {
+        width: 100vw auto;
+        height: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 1.3em;
+    }
+    @include mobile
+    {
+        width: auto;
+        margin: auto;
     }
 }
 
@@ -32,6 +83,15 @@ section
     margin-top: 20px;
     text-align: center;
     justify-content: center;
+    @include grande-tablette
+    {
+        margin: auto;
+    }
+    @include mobile
+    {
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 
 .menus34
@@ -76,6 +136,12 @@ h2
     {
         text-align: center;
     }
+    @include mobile
+    {
+        width: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
 
 .partie_menu
@@ -84,6 +150,10 @@ h2
     justify-content: space-between;
     margin: 0 auto;
     width: 600px;
+    @include mobile
+    {
+        width: auto;
+    }
 }
 .menu_lanote .trait_gauche, .menu_lanote .trait_droit
 {
@@ -104,21 +174,51 @@ h2
         {
             width: 80%;
             margin: auto 0;
+            @include mobile
+            {
+                width: auto;
+                text-align: center;
+            }
         }
         & p:last-child
         {
             width: 20%;
             text-align: right;
             font-weight: bold;
+            @include mobile
+            {
+                width: auto;
+                text-align: center;
+            }
         }
+    @include mobile
+    {
+        width: auto;
+        flex-direction: column;
+    }
 
     }
 }
 
-.mouvement ul li
+.mouvement
+{
+    @include mobile
+    {
+        text-align: center;
+    }
+    & ul
+    {
+        & li
+        {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+/*.mouvement ul li
 {
     padding-bottom: 20px;
-}
+}*/
 
 .titre_final
 {
@@ -141,6 +241,12 @@ h2
     {
         text-align: center;
         font-size: 2em;
+    }
+    @include mobile
+    {
+        width: auto;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 .menu_lechic .partie_menu1, .menu_lechic .prelude
@@ -179,6 +285,12 @@ h2
         text-align: center;
         font-size: 2em;
     }
+    @include mobile
+    {
+        width: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
 
 .menu_ledelice .partie_menu1 .trait_gauche, .menu_ledelice .partie_menu1 .trait_droit
@@ -212,6 +324,12 @@ h2
         text-align: center;
         font-size: 2em;
     }
+    @include mobile
+    {
+        width: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
 
 .menu_lapalette .trait_gauche, .menu_lapalette .trait_droit
@@ -229,6 +347,14 @@ h2
     margin: auto;
     text-align: justify;
     font-size: 1.1em;
+    @include mobile
+    {
+        width: auto;
+        margin: auto;
+        height: 90%;
+        font-size: 1em;
+        padding: 0 5px;
+    }
 }
 
 .Mentionlegale a

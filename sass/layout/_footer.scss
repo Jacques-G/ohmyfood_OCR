@@ -1,4 +1,5 @@
 @import "../utils/variables";
+@import "../utils/mixins";
 
 /*-----FOOTER-----*/
 footer
@@ -17,4 +18,8 @@ footer a
     color: $jaune_titre;
     font-family: $font-titre;
     font-size: 2em;
+    @include mobile
+    {
+        font-size: 1em;
+    }
 }
