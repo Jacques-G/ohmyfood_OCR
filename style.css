@@ -300,6 +300,9 @@ h1 {
   font-size: 3em;
   color: #fdcb46;
 }
+h1 a {
+  color: #fdcb46;
+}
 
 header {
   background-color: #579c87;

@@ -9,6 +9,10 @@ h1
     font-family: $font_titre;
     font-size: 3em;
     color: $jaune_titre;
+    & a
+    {
+        color: $jaune_titre;
+    }
 }
 
 header
