@@ -12,7 +12,6 @@ body
 
 .main
 {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -262,11 +261,6 @@ h2
     justify-content: center;
 }
 
-.titre_final h3
-{
-    padding-top: 25px;
-}
-
 .menu_lanote .trait_gauche, .menu_lanote .trait_droit
 {
     width: 35%;
@@ -359,7 +353,6 @@ h2
 .Mentionlegale
 {
     width: 700px;
-    height: 100vh auto;
     margin: auto;
     text-align: justify;
     font-size: 1.1em;
@@ -371,65 +364,3 @@ h2
 }
 
 /*----------MEDIA QUERIES----------*/
-@media all and (max-width: 1024px)
-{
-    /*.menus12, .menus34
-    {
-        margin: 150px auto;
-    }*/
-}
-
-@media all and (max-width: 800px)
-{
-    /*.main
-    {
-        margin: auto auto;
-    }*/
-}
-@media all and (max-width: 640px)
-{
-    /*.menus12, .menus34
-    {
-        flex-direction: column;
-        justify-content: center;
-        margin:0;
-    }
-    .la_note, .le_chic, .le_delice, .la_palette
-    {
-        margin: 5px auto;
-    }
-
-    .coming
-    {
-        margin: 5px auto 50px auto;
-    }
-    
-    footer div a
-    {
-        font-size: 1em;
-    }
-
-    .menu_lanote
-    {
-        width: auto;
-        margin-bottom: 60px;
-    }
-
-    .prelude, .point_dorgue
-    {
-        margin: 0 auto;
-        justify-content: space-around;
-        padding-right: 20px;
-    }
-
-    .prix_lanote
-    {
-        flex-direction: row;
-    }
-
-    .mouvement
-    {
-        padding-left: 0;
-    }*/
-
-}
