@@ -4,7 +4,7 @@ body
 {
     width: 100vw;
     height: 100vh;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     overflow-x: hidden;
     position: relative;
@@ -258,6 +258,7 @@ h2
 .titre_final
 {
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -364,3 +365,131 @@ h2
 }
 
 /*----------MEDIA QUERIES----------*/
+
+@media all and (max-width: 1024px)
+{
+    body
+    {
+        margin: auto;
+        width: 100%;
+    }
+
+    .main
+    {
+        margin: auto;
+        height: 90%;
+    }
+    
+    .menus12, .menus34 
+    {
+        margin: auto;
+    }
+
+    .main2
+    {
+        height: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .main3
+    {
+        width: auto;
+        height: 90%;
+        font-size: 1.3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 800px)
+{
+    body
+    {
+        margin: auto;
+        width: 100%;
+    }
+
+    .main2
+    {
+        height: auto;
+        margin: auto;
+    }
+}
+
+@media all and (max-width: 640px)
+{
+    .main
+    {
+        height: auto;
+        width: auto;
+    }
+
+    .menus12, .menus34
+    {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .la_note, .le_delice
+    {
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    .le_chic, .la_palette
+    {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .coming
+    {
+        margin-top: 20px;
+    }
+
+    footer a
+    {
+        font-size: 1em;
+    }
+
+    .main2, .main3, .Mentionlegale
+    {
+        width: auto;
+        margin: auto;
+    }
+    .menu_lanote, .menu_lechic, .menu_ledelice, .menu_lapalette
+    {
+        width: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .partie_menu, .descript_plat, .prix_plat
+    {
+        width: auto;
+    }
+
+    .descript_lanote li
+    {
+        width: auto;
+        flex-direction: column;
+    }
+    .descript_lanote li p, .mouvement
+    {
+        text-align: center;
+    }
+
+    .main3 
+    {
+        width: auto;
+    }
+    .Mentionlegale
+    {
+        height: 90%;
+        font-size: 1em;
+        padding: 0 5px 0 5px;
+    }
+    
+}
