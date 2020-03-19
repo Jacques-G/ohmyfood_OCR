@@ -4,9 +4,11 @@
 /*-----ACCUEIL-----*/
 .main
 {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    height: calc(100vh - 70px - 50px);
     & p
     {
         font-size: 25px;
