@@ -117,11 +117,11 @@ a {
 
 /*-----ACCUEIL-----*/
 .main {
+  height: auto;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: calc(100vh - 70px - 50px);
 }
 .main p {
   font-size: 25px;
@@ -489,6 +489,7 @@ h1 a {
 
 header {
   background-color: #579c87;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=style.css.map */
