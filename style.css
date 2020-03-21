@@ -340,6 +340,9 @@ h2 {
     padding-right: 5px;
   }
 }
+.menu_lechic h4 {
+  text-align: center;
+}
 
 .menu_lechic .partie_menu1, .menu_lechic .prelude {
   color: #c67412;
@@ -406,6 +409,9 @@ h2 {
 .menu_lapalette h3 {
   text-align: center;
   font-size: 2em;
+}
+.menu_lapalette h4 {
+  text-align: center;
 }
 @media all and (max-width: 640px) {
   .menu_lapalette {
