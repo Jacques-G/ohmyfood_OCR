@@ -108,6 +108,8 @@ a {
   font-size: 2em;
   border-radius: 5px;
   margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
 }
 @media all and (max-width: 640px) {
   .coming {
@@ -211,6 +213,25 @@ section a {
   font-family: "Shadow Into Light", cursive;
 }
 
+.ptn {
+  width: 5px;
+  height: 5px;
+  background-color: #fdcb46;
+  margin: 26px 2px 0 2px;
+  border-radius: 100%;
+  transform: translateY(-10px);
+}
+.ptn__1 {
+  margin-left: 5px;
+  transition: transform 800ms ease-in-out;
+}
+.ptn__2 {
+  transition: transform 800ms 400ms ease-in-out;
+}
+.ptn__3 {
+  transition: transform 800ms 800ms ease-in-out;
+}
+
 /*-----PAGE LA NOTE ENCHANTEE-----*/
 h2 {
   text-align: center;
@@ -237,6 +258,10 @@ h2 {
 }
 .menu_lanote h4 {
   text-align: center;
+  cursor: pointer;
+}
+.menu_lanote h4:hover + .surlign {
+  transform: scaleX(1);
 }
 @media all and (max-width: 640px) {
   .menu_lanote {
@@ -256,6 +281,23 @@ h2 {
   .partie_menu {
     width: auto;
   }
+}
+
+.nom__partie .surlign {
+  height: 5px;
+  margin-top: -20px;
+  transform: scaleX(0);
+  transition: transform 1000ms ease-in-out;
+  transform-origin: left;
+}
+.nom__partie .surlign--2 {
+  background-color: #3d1319;
+}
+.nom__partie .surlign--3 {
+  background-color: #3d1319;
+}
+.nom__partie .surlign--4 {
+  background-color: #3d1319;
 }
 
 .menu_lanote .trait_gauche, .menu_lanote .trait_droit {
@@ -342,6 +384,20 @@ h2 {
 }
 .menu_lechic h4 {
   text-align: center;
+  cursor: pointer;
+}
+.menu_lechic h4:hover + .surlign {
+  transform: scaleX(1);
+}
+
+.nom__partie--chic .surlign__chic--1 {
+  background-color: #c67412;
+}
+.nom__partie--chic .surlign__chic--2 {
+  background-color: #a56799;
+}
+.nom__partie--chic .surlign__chic--3 {
+  background-color: #6e4ccc;
 }
 
 .menu_lechic .partie_menu1, .menu_lechic .prelude {
@@ -376,12 +432,28 @@ h2 {
   text-align: center;
   font-size: 2em;
 }
+.menu_ledelice h4 {
+  cursor: pointer;
+}
+.menu_ledelice h4:hover + .surlign {
+  transform: scaleX(1);
+}
 @media all and (max-width: 640px) {
   .menu_ledelice {
     width: auto;
     padding-left: 5px;
     padding-right: 5px;
   }
+}
+
+.nom__partie .surlign__delice--1 {
+  background-color: #0228dd;
+}
+.nom__partie .surlign__delice--2 {
+  background-color: #0670f3;
+}
+.nom__partie .surlign__delice--3 {
+  background-color: #229df9;
 }
 
 .menu_ledelice .partie_menu1 .trait_gauche, .menu_ledelice .partie_menu1 .trait_droit {
@@ -412,6 +484,10 @@ h2 {
 }
 .menu_lapalette h4 {
   text-align: center;
+  cursor: pointer;
+}
+.menu_lapalette h4:hover + .surlign {
+  transform: scaleX(1);
 }
 @media all and (max-width: 640px) {
   .menu_lapalette {
@@ -419,6 +495,10 @@ h2 {
     padding-left: 5px;
     padding-right: 5px;
   }
+}
+
+.nom__partie .surlign__palette {
+  background-color: #45993e;
 }
 
 .menu_lapalette .trait_gauche, .menu_lapalette .trait_droit {

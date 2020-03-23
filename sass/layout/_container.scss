@@ -106,6 +106,29 @@ section
 
 }
 
+.ptn
+{
+    width: $ptn-size;
+    height: $ptn-size;
+    background-color: $jaune_titre;
+    margin: 26px 2px 0 2px;
+    border-radius: 100%;
+    transform: translateY(-10px);
+    &__1
+    {
+        margin-left: 5px;
+        transition: transform 800ms ease-in-out;
+    }
+    &__2
+    {
+        transition:  transform 800ms 400ms ease-in-out;
+    }
+    &__3
+    {
+        transition: transform 800ms 800ms ease-in-out;
+    }
+}
+
 /*-----PAGE LA NOTE ENCHANTEE-----*/
 
 h2
@@ -137,6 +160,14 @@ h2
     & h4
     {
         text-align: center;
+        cursor: pointer;
+        &:hover
+        {
+            & + .surlign
+            {
+                transform: scaleX(1);
+            }
+        }
     }
     @include mobile
     {
@@ -156,6 +187,31 @@ h2
     {
         width: auto;
     }
+}
+
+.nom__partie
+{
+    & .surlign
+    {
+        height: 5px;
+        margin-top: -20px;
+        transform: scaleX(0);
+        transition: transform 1000ms ease-in-out;
+        transform-origin: left;
+        &--2
+        {
+            background-color: $bordeau;
+        }
+        &--3
+        {
+            background-color: $bordeau;
+        }
+        &--4
+        {
+            background-color: $bordeau;
+        }
+    }
+    
 }
 .menu_lanote .trait_gauche, .menu_lanote .trait_droit
 {
@@ -253,8 +309,36 @@ h2
     & h4
     {
         text-align: center;
+        cursor: pointer;
+        &:hover
+        {
+            & + .surlign
+            {
+                transform: scaleX(1);
+            }
+        }
     }
     
+}
+
+.nom__partie--chic
+{
+    & .surlign__chic
+    {
+        &--1
+        {
+            background-color: $orange;
+        }
+        &--2
+        {
+            background-color: $violet;
+        }
+        &--3
+        {
+            background-color: $violet_fonce;
+        }
+        
+    }
 }
 .menu_lechic .partie_menu1, .menu_lechic .prelude
 {
@@ -292,11 +376,40 @@ h2
         text-align: center;
         font-size: 2em;
     }
+    & h4
+    {
+        cursor: pointer;
+        &:hover
+        {
+            & + .surlign
+            {
+            transform: scaleX(1);
+            }
+        }
+    }
     @include mobile
     {
         width: auto;
         padding-left: 5px;
         padding-right: 5px;
+    }
+}
+.nom__partie
+{
+    & .surlign__delice
+    {
+        &--1
+        {
+            background-color: $bleu_fonce;
+        }
+        &--2
+        {
+            background-color: $bleu;
+        }
+        &--3
+        {
+            background-color: $bleu_clair;
+        }
     }
 }
 
@@ -334,12 +447,28 @@ h2
     & h4
     {
         text-align: center;
+        cursor: pointer;
+        &:hover
+        {
+            & + .surlign
+            {
+                transform: scaleX(1);
+            }
+        }
     }
     @include mobile
     {
         width: auto;
         padding-left: 5px;
         padding-right: 5px;
+    }
+}
+
+.nom__partie
+{
+    & .surlign__palette
+    {
+        background-color: $vert;
     }
 }
 
