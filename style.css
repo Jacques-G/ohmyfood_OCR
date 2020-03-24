@@ -164,7 +164,7 @@ a {
 
 @media all and (max-width: 1024px) {
   .main3 {
-    width: 100vw auto;
+    width: 100vw;
     height: 90%;
     margin: auto;
     display: flex;
@@ -248,12 +248,14 @@ h2 {
   font-family: "Dancing Script", sans-serif;
   color: #3d1319;
 }
-.menu_lanote figure, .menu_lanote h3 {
+.menu_lanote figure {
   font-size: 2em;
-  margin-bottom: -20px;
   text-align: center;
+  justify-content: center;
 }
 .menu_lanote h3 {
+  font-size: 2em;
+  text-align: center;
   margin-bottom: 0;
 }
 .menu_lanote h4 {
