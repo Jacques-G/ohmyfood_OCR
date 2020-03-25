@@ -73,6 +73,7 @@ a {
   .la_note {
     margin-right: 0;
     margin-top: 20px;
+    z-index: 0;
   }
 }
 
@@ -108,6 +109,7 @@ a {
   .le_chic {
     margin-left: 0;
     margin-top: 20px;
+    z-index: 0;
   }
 }
 
@@ -143,6 +145,7 @@ a {
   .le_delice {
     margin-right: 0;
     margin-top: 20px;
+    z-index: 0;
   }
 }
 
@@ -178,6 +181,7 @@ a {
   .la_palette {
     margin-left: 0;
     margin-top: 20px;
+    z-index: 0;
   }
 }
 
@@ -305,17 +309,17 @@ section h3 {
   background-color: #fdcb46;
   margin: 26px 2px 0 2px;
   border-radius: 100%;
-  transform: translateY(-10px);
+  transform: translateY(0);
 }
 .ptn__1 {
   margin-left: 5px;
-  transition: transform 800ms ease-in-out;
+  animation: ptn 2000ms ease-in-out infinite;
 }
 .ptn__2 {
-  transition: transform 800ms 400ms ease-in-out;
+  animation: ptn 2000ms 400ms ease-in-out infinite;
 }
 .ptn__3 {
-  transition: transform 800ms 800ms ease-in-out;
+  animation: ptn 2000ms 800ms ease-in-out infinite;
 }
 
 /*-----PAGE LA NOTE ENCHANTEE-----*/
@@ -441,13 +445,14 @@ h2 {
   padding-bottom: 20px;
 }
 
-/*.mouvement ul li
-{
-    padding-bottom: 20px;
-}*/
 .titre_final {
   display: flex;
   justify-content: center;
+}
+@media all and (max-width: 640px) {
+  .titre_final {
+    flex-direction: column;
+  }
 }
 
 /*-----PAGE LE CHIC A LA FRANCAISE-----*/
@@ -621,6 +626,28 @@ h2 {
   color: black;
 }
 
+@keyframes ptn {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-10px);
+  }
+  66% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake {
+  25% {
+    transform: translateX(2%);
+  }
+  75% {
+    transform: translateY(-2%);
+  }
+}
 /*-----FOOTER-----*/
 footer {
   display: flex;
@@ -633,7 +660,6 @@ footer {
   vertical-align: middle;
   line-height: 50px;
 }
-
 footer a {
   color: #fdcb46;
   font-family: "Roboto", sans-serif;
@@ -643,6 +669,9 @@ footer a {
   footer a {
     font-size: 1em;
   }
+}
+footer div:hover:hover {
+  animation: shake 100ms infinite;
 }
 
 /*-----HEADER-----*/
@@ -663,6 +692,29 @@ h1 a {
 header {
   background-color: #579c87;
   z-index: 2;
+}
+
+@keyframes ptn {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-10px);
+  }
+  66% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake {
+  25% {
+    transform: translateX(2%);
+  }
+  75% {
+    transform: translateY(-2%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

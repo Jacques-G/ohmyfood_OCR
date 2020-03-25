@@ -113,19 +113,19 @@ section
     background-color: $jaune_titre;
     margin: 26px 2px 0 2px;
     border-radius: 100%;
-    transform: translateY(-10px);
+    transform: translateY(0);
     &__1
     {
         margin-left: 5px;
-        transition: transform 800ms ease-in-out;
+        animation: ptn 2000ms ease-in-out infinite;
     }
     &__2
     {
-        transition:  transform 800ms 400ms ease-in-out;
+        animation: ptn 2000ms 400ms ease-in-out infinite;
     }
     &__3
     {
-        transition: transform 800ms 800ms ease-in-out;
+        animation: ptn 2000ms 800ms ease-in-out infinite;
     }
 }
 
@@ -282,6 +282,10 @@ h2
 {
     display: flex;
     justify-content: center;
+    @include mobile
+    {
+        flex-direction: column;
+    }
 }
 
 /*-----PAGE LE CHIC A LA FRANCAISE-----*/

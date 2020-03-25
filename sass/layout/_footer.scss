@@ -1,5 +1,6 @@
 @import "../utils/variables";
 @import "../utils/mixins";
+@import "../utils/keyframes";
 
 /*-----FOOTER-----*/
 footer
@@ -13,16 +14,22 @@ footer
     bottom: 0;
     vertical-align: middle;
     line-height: 50px;
-
-}
-
-footer a
-{
-    color: $jaune_titre;
-    font-family: $font-titre;
-    font-size: 2em;
-    @include mobile
+    & a
     {
-        font-size: 1em;
+        color: $jaune_titre;
+        font-family: $font-titre;
+        font-size: 2em;
+        @include mobile
+        {
+            font-size: 1em;
+        }
     }
+    & div:hover
+    {
+        &:hover
+        {
+            animation: shake 100ms infinite;
+        }
+    }
+
 }

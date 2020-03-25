@@ -1,0 +1,26 @@
+@import "./variables";
+
+@keyframes ptn{
+    0%{
+        transform: translateY(0);
+    }
+    33%{
+        transform: translateY(-10px);
+    }
+    66%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+  25%{
+      transform: translateX($shake);
+  }
+  75%{
+      transform: translateY($shake * -1);
+  }
+  }
+
