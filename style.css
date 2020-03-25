@@ -212,7 +212,7 @@ a {
 /*-----ACCUEIL-----*/
 .main {
   margin: auto;
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -670,6 +670,7 @@ footer {
   bottom: 0;
   vertical-align: middle;
   line-height: 50px;
+  z-index: 1;
 }
 footer a {
   color: #fdcb46;
