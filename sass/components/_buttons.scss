@@ -219,6 +219,11 @@
     margin-bottom: 100px;
     display: flex;
     justify-content: center;
+
+    @include grande-tablette
+    {
+        margin-top: 50px;
+    }
     @include mobile
     {
         margin-top: 20px;

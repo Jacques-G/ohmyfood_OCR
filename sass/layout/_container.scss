@@ -4,7 +4,7 @@
 /*-----ACCUEIL-----*/
 .main
 {
-    height: auto;
+    margin: auto;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,8 @@
     @include grande-tablette
     {
         margin: auto;
-        height: 90%;
+        height: calc(100vh - 70px - 50px);
+        justify-content: center;
     }
     @include mobile
     {
@@ -86,6 +87,10 @@ section
     text-align: center;
     justify-content: center;
     @include grande-tablette
+    {
+        margin: auto auto -90px auto;
+    }
+    @include petite-tablette
     {
         margin: auto;
     }
