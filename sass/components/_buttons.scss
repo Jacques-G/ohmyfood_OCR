@@ -9,14 +9,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transform: scale(1);
-    transition: transform 400ms;
-
+    & figure, h3, p
+    {
+        transform: scale(1);
+        transition: transform 400ms;
+    }
     &:hover
     {
-        transform: scale(1.2);
-        z-index: 1;
+        & figure, h3, p
+        {
+            transform: scale(1.2);
+        }
     }
+        
+    
 }
 
 .la_note
@@ -24,6 +30,8 @@
     align-items: center;
     margin-right: 10px;
     background-color: $chaire;
+    position: relative;
+    z-index: 1;
     & h3
     {
         font-family: $font_note;
@@ -33,11 +41,33 @@
     {
         font-size: 2em;
         margin-bottom: -20px;
+        color: $rouge_note;
     }
     & p
     {
         text-transform: uppercase;
         font-family: $font_ubuntu;
+        color: $noir;
+    }
+    &:hover
+    {
+        &::after
+        {
+            opacity: 1;
+        }
+    }
+    &::after
+    {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: lighten($chaire, 2);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 400ms;
     }
     @include mobile
     {
@@ -50,9 +80,36 @@
 {
     background-color: $rose_pale;
     margin-left: 10px;
+    position: relative;
+    z-index: 1;
     & h3
     {
+        color: $violet_fonce;
         font-family: $font_bellota;
+    }
+    & p
+    {
+        color: $orange;
+    }
+    &:hover
+    {
+        &::after
+        {
+            opacity: 1;
+        }
+    }
+    &::after
+    {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: lighten($rose_pale, 1);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 400ms;
     }
     @include mobile
     {
@@ -65,9 +122,36 @@
 {
     background-color: $gris_clair;
     margin-right: 10px;
+    position: relative;
+    z-index: 1;
     & h3
     {
         font-family: $font_satisfy;
+        color: $bleu;
+    }
+    & p
+    {
+        color: $bleu;
+    }
+    &:hover
+    {
+        &::after
+        {
+            opacity: 1;
+        }
+    }
+    &::after
+    {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: lighten($gris_clair, 2);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 400ms;
     }
     @include mobile
     {
@@ -80,9 +164,36 @@
 {
     background-color: $blanc_terne;
     margin-left: 10px;
+    position: relative;
+    z-index: 1;
     & h3
     {
         font-family: $font_indie;
+        color: $vert;
+    }
+    & p
+    {
+        color: $vert;
+    }
+    &:hover
+    {
+        &::after
+        {
+            opacity: 1;
+        }
+    }
+    &::after
+    {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: lighten($blanc_terne, 2);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 400ms;
     }
     @include mobile
     {

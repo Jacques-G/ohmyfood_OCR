@@ -71,10 +71,10 @@ section
     {
         margin-bottom: 0;
     }
-    & a
+    /*& a
     {
         color: $noir;
-    }
+    }*/
 
 }
 
@@ -152,6 +152,7 @@ h2
         font-size: 2em;
         text-align: center;
         justify-content: center;
+        color: $rouge_note;
        
     }
     & h3
@@ -302,6 +303,7 @@ h2
     {
         text-align: center;
         font-size: 2em;
+        color: $violet_fonce;
     }
     @include mobile
     {
@@ -378,6 +380,7 @@ h2
     {
         text-align: center;
         font-size: 2em;
+        color: $bleu;
     }
     & h4
     {
@@ -446,6 +449,7 @@ h2
     {
         text-align: center;
         font-size: 2em;
+        color: $vert;
     }
     & h4
     {
@@ -480,6 +484,7 @@ h2
     width: 35%;
     height: 30px;
     border-bottom: 3px double;
+    color: $vert;
 }
 
 /*-----PAGE MENTIUONS LEGALES-----*/

@@ -24,18 +24,21 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.la_note figure, .la_note h3, .la_note p, .le_chic figure, .le_chic h3, .le_chic p, .le_delice figure, .le_delice h3, .le_delice p, .la_palette figure, .la_palette h3, .la_palette p {
   transform: scale(1);
   transition: transform 400ms;
 }
-.la_note:hover, .le_chic:hover, .le_delice:hover, .la_palette:hover {
+.la_note:hover figure, .la_note:hover h3, .la_note:hover p, .le_chic:hover figure, .le_chic:hover h3, .le_chic:hover p, .le_delice:hover figure, .le_delice:hover h3, .le_delice:hover p, .la_palette:hover figure, .la_palette:hover h3, .la_palette:hover p {
   transform: scale(1.2);
-  z-index: 1;
 }
 
 .la_note {
   align-items: center;
   margin-right: 10px;
   background-color: #fcdfdb;
+  position: relative;
+  z-index: 1;
 }
 .la_note h3 {
   font-family: "Dancing Script", sans-serif;
@@ -44,10 +47,27 @@ a {
 .la_note figure {
   font-size: 2em;
   margin-bottom: -20px;
+  color: #f36d68;
 }
 .la_note p {
   text-transform: uppercase;
   font-family: "Ubuntu", sans-serif;
+  color: black;
+}
+.la_note:hover::after {
+  opacity: 1;
+}
+.la_note::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fde7e4;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 400ms;
 }
 @media all and (max-width: 640px) {
   .la_note {
@@ -59,9 +79,30 @@ a {
 .le_chic {
   background-color: #fff5fe;
   margin-left: 10px;
+  position: relative;
+  z-index: 1;
 }
 .le_chic h3 {
+  color: #6e4ccc;
   font-family: "Bellota", cursive;
+}
+.le_chic p {
+  color: #c67412;
+}
+.le_chic:hover::after {
+  opacity: 1;
+}
+.le_chic::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fffaff;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 400ms;
 }
 @media all and (max-width: 640px) {
   .le_chic {
@@ -73,9 +114,30 @@ a {
 .le_delice {
   background-color: #f9f9f9;
   margin-right: 10px;
+  position: relative;
+  z-index: 1;
 }
 .le_delice h3 {
   font-family: "Satisfy", cursive;
+  color: #0670f3;
+}
+.le_delice p {
+  color: #0670f3;
+}
+.le_delice:hover::after {
+  opacity: 1;
+}
+.le_delice::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fefefe;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 400ms;
 }
 @media all and (max-width: 640px) {
   .le_delice {
@@ -87,9 +149,30 @@ a {
 .la_palette {
   background-color: #fdfffd;
   margin-left: 10px;
+  position: relative;
+  z-index: 1;
 }
 .la_palette h3 {
   font-family: "Indie Flower", cursive;
+  color: #45993e;
+}
+.la_palette p {
+  color: #45993e;
+}
+.la_palette:hover::after {
+  opacity: 1;
+}
+.la_palette::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 400ms;
 }
 @media all and (max-width: 640px) {
   .la_palette {
@@ -180,11 +263,14 @@ a {
   }
 }
 
+section {
+  /*& a
+  {
+      color: $noir;
+  }*/
+}
 section h3 {
   margin-bottom: 0;
-}
-section a {
-  color: black;
 }
 
 .menus12, .menus34 {
@@ -252,6 +338,7 @@ h2 {
   font-size: 2em;
   text-align: center;
   justify-content: center;
+  color: #f36d68;
 }
 .menu_lanote h3 {
   font-size: 2em;
@@ -376,6 +463,7 @@ h2 {
 .menu_lechic h3 {
   text-align: center;
   font-size: 2em;
+  color: #6e4ccc;
 }
 @media all and (max-width: 640px) {
   .menu_lechic {
@@ -433,6 +521,7 @@ h2 {
 .menu_ledelice h3 {
   text-align: center;
   font-size: 2em;
+  color: #0670f3;
 }
 .menu_ledelice h4 {
   cursor: pointer;
@@ -483,6 +572,7 @@ h2 {
 .menu_lapalette h3 {
   text-align: center;
   font-size: 2em;
+  color: #45993e;
 }
 .menu_lapalette h4 {
   text-align: center;
@@ -507,6 +597,7 @@ h2 {
   width: 35%;
   height: 30px;
   border-bottom: 3px double;
+  color: #45993e;
 }
 
 /*-----PAGE MENTIUONS LEGALES-----*/
