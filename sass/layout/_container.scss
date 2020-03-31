@@ -16,7 +16,8 @@
     @include grande-tablette
     {
         margin: auto;
-        height: calc(100vh - 70px - 50px);
+        //height: calc(100vh - 70px - 50px);
+        height: 80%;
         justify-content: center;
     }
     @include mobile
