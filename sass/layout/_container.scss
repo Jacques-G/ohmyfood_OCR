@@ -20,6 +20,10 @@
         height: 80%;
         justify-content: center;
     }
+    @include petite-tablette
+    {
+        height: calc(100vh - 70px - 50px);
+    }
     @include mobile
     {
         width: auto;

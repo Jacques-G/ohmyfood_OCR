@@ -227,6 +227,11 @@ a {
     justify-content: center;
   }
 }
+@media all and (max-width: 800px) {
+  .main {
+    height: calc(100vh - 70px - 50px);
+  }
+}
 @media all and (max-width: 640px) {
   .main {
     width: auto;
